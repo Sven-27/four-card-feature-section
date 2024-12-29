@@ -15,12 +15,18 @@ body{
   background: $gray-100;
   display: grid;
   place-items: center;
+  min-height: 100vh;
+  padding-block: $s-64;
 
   //  section styles
-  section > p{
-    font-size: $fs-15;
+  section{ 
+    text-align: center;
+    & > p{
+      font-size: $fs-15;
+      max-width: 32ch;
+      padding-top: $s-16;
+    }
   }
-
   // h1 and h2 styles
   h1,
   h2{
@@ -45,23 +51,43 @@ body{
 
   // Main styles
   main{
-    padding: $s-16;
+    display: flex;
+    flex-direction: column;
+    padding: $s-32;
+    gap: $s-24;
 
     //  article styles
     article{
-      margin-bottom: $s-16;
       display: flex;
       flex-direction: column;
       background: $white;
+      border-radius: 5px;
+      box-shadow: 0 4px 12px rgba(77, 79, 98, 0.25);
+      overflow: hidden;
+      padding: $s-24;
 
-      p{
+      & > p{
         font-size: $fs-13;
       }
 
-      img{
+      & > img{
         width: clamp(57px, 10vw, 64px);
         aspect-ratio: 1/1;
         align-self: flex-end;
+        margin-top: $s-32;
+      }
+
+      &:first-of-type{
+        border-top: 4px solid $cyan;
+      }
+      &:nth-of-type(2){
+        border-top: 4px solid $red;
+      }
+      &:nth-of-type(3){
+        border-top: 4px solid $orange;
+      }
+      &:last-of-type{
+        border-top: 4px solid $blue-100;
       }
     }
   }
