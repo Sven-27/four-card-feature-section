@@ -1,0 +1,69 @@
+// General styles for the site
+
+// Simple reset
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//  body styles
+body{
+  font-family: $poppins;
+  font-weight: $fw-400;
+  color: $gray-200;
+  background: $gray-100;
+  display: grid;
+  place-items: center;
+
+  //  section styles
+  section > p{
+    font-size: $fs-15;
+  }
+
+  // h1 and h2 styles
+  h1,
+  h2{
+    font-weight: $fw-600;
+    color: $blue-200;
+
+    //  span styles
+    span {
+      font-weight: $fw-200;
+    }
+  }
+
+  // h1 font size
+  h1{
+    font-size: clamp($fs-24, 3vw, $fs-36);
+  }
+
+  // h2 font size
+  h2{
+    font-size: $fs-20;
+  }
+
+  // Main styles
+  main{
+    padding: $s-16;
+
+    //  article styles
+    article{
+      margin-bottom: $s-16;
+      display: flex;
+      flex-direction: column;
+      background: $white;
+
+      p{
+        font-size: $fs-13;
+      }
+
+      img{
+        width: clamp(57px, 10vw, 64px);
+        aspect-ratio: 1/1;
+        align-self: flex-end;
+      }
+    }
+  }
+}
+

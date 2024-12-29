@@ -1,17 +1,52 @@
-/* Error: expected more input.
- *   ,
- * 2 | @import 
- *   |         ^
- *   '
- *   sass/input.scss 2:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: expected more input.\a   \2577 \a 2 \2502  @import \a   \2502          ^\a   \2575 \a   sass/input.scss 2:9  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #A3A5AE;
+  background: #FAFAFA;
+  display: grid;
+  place-items: center;
+}
+body section > p {
+  font-size: 0.9375rem;
+}
+body h1,
+body h2 {
+  font-weight: 600;
+  color: #4D4F62;
+}
+body h1 span,
+body h2 span {
+  font-weight: 200;
+}
+body h1 {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+}
+body h2 {
+  font-size: 1.25rem;
+}
+body main {
+  padding: 1rem;
+}
+body main article {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+}
+body main article p {
+  font-size: 0.8125rem;
+}
+body main article img {
+  width: clamp(57px, 10vw, 64px);
+  aspect-ratio: 1/1;
+  align-self: flex-end;
+}
+
+/*# sourceMappingURL=output.css.map */
