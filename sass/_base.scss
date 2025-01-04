@@ -23,7 +23,7 @@ body{
     text-align: center;
     & > p{
       font-size: $fs-15;
-      max-width: 32ch;
+      max-width: clamp(32ch, 40vw, 55ch);
       padding-top: $s-16;
     }
   }
@@ -65,9 +65,17 @@ body{
       box-shadow: 0 4px 12px rgba(77, 79, 98, 0.25);
       overflow: hidden;
       padding: $s-24;
+      width: clamp(311px, 40vw, 350px);
+      aspect-ratio: 1.4/1;
+
+      & > h2{
+        margin-bottom: clamp($s-4, 1vw, $s-8);
+      }
 
       & > p{
         font-size: $fs-13;
+        max-width: clamp(30ch, 40vw, 35ch);
+        height: 100%;
       }
 
       & > img{
@@ -82,6 +90,10 @@ body{
       }
       &:nth-of-type(2){
         border-top: 4px solid $red;
+
+        & > p{
+          max-width: 35ch;
+        }
       }
       &:nth-of-type(3){
         border-top: 4px solid $orange;
