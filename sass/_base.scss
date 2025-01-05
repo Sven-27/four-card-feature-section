@@ -26,6 +26,10 @@ body{
       max-width: clamp(32ch, 40vw, 55ch);
       padding-top: $s-16;
     }
+
+    h1, p{
+      text-align: center;
+    }
   }
   // h1 and h2 styles
   h1,
