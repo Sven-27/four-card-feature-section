@@ -15,10 +15,10 @@ body {
   min-height: 100vh;
   padding-block: 4rem;
 }
-body section {
+body header {
   text-align: center;
 }
-body section > p {
+body header > p {
   font-size: 0.9375rem;
   max-width: clamp(32ch, 40vw, 55ch);
   padding-top: 1rem;
