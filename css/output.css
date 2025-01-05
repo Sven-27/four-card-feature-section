@@ -23,11 +23,6 @@ body header > p {
   max-width: clamp(32ch, 40vw, 55ch);
   padding-top: 1rem;
 }
-body header h1, body header p {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 body h1,
 body h2 {
   font-weight: 600;

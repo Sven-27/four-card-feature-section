@@ -18,7 +18,7 @@ body{
   min-height: 100vh;
   padding-block: $s-64;
 
-  //  section styles
+  //  header styles
   header{ 
     text-align: center;
     & > p{
@@ -27,11 +27,11 @@ body{
       padding-top: $s-16;
     }
 
-    h1, p{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+    // h1, p{
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
+    // }
   }
   // h1 and h2 styles
   h1,
