@@ -19,7 +19,7 @@ body{
   padding-block: $s-64;
 
   //  section styles
-  section{ 
+  header{ 
     text-align: center;
     & > p{
       font-size: $fs-15;
@@ -103,6 +103,7 @@ body{
       }
     }
 
+    // Media query grid layout for large screens
     @media only screen and (min-width: 1025px){
       display: grid;
       place-items: center;
